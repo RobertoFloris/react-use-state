@@ -12,7 +12,7 @@ const Main = (props) => {
       <div className="container">
 
         {languages.map(language => (
-          <button key={language.id} type="button" className="btn btn-primary m-3">{language.title}</button>
+          <button key={language.id} type="button" className={selectedId == language.id ? "btn btn-warning m-3" : "btn btn-primary m-3"} onClick={() => setSelectedId(language.id)} >{language.title}</button>
         ))}
 
         <div class="card">
