@@ -1,6 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import languages from "./data/languages"
+
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <nav className="navbar navbar-light bg-light">
+        <div className="container">
+          <h1>Learn Web Development</h1>
+        </div>
+      </nav>
+
+
+
+    </>
   )
 }
 
