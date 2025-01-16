@@ -1,5 +1,11 @@
+import { useState } from "react";
+
 const Main = (props) => {
+
   const { languages } = props;
+
+  const [selectedId, setSelectedId] = useState(1)
+
   return (
     <main>
 
@@ -13,11 +19,11 @@ const Main = (props) => {
           <div class="card-body">
 
             <div>
-              <h2>{languages[0].title}</h2>
+              <h2>{languages.find(language => language.id == selectedId).title}</h2>
             </div>
 
             <div>
-              {languages[0].description}
+              <p>{languages.find(language => language.id == selectedId).description}</p>
             </div>
 
           </div>
