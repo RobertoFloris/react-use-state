@@ -2,15 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import languages from "./data/languages"
 
+import Header from './assets/Header';
+import Main from './assets/Main';
+
 const App = () => {
   return (
     <>
-      <nav className="navbar navbar-light bg-light">
-        <div className="container">
-          <h1>Learn Web Development</h1>
-        </div>
-      </nav>
+      <Header />
 
+      <Main languages={languages} />
 
 
     </>
